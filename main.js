@@ -39,3 +39,23 @@ function titleChange(event) {
 
 flowerButton.addEventListener("click", titleChange);
 
+
+// Task 3
+
+// Select input element with id #title-changer set to a variable
+// Select h1 element and set to a variable
+
+let inputChanger = document.querySelector('#title-changer');
+let h1 = document.querySelector('h1');
+
+// function(event)
+  // h1 = event.target.value
+
+function handleInput(event) {
+  let inputValue = event.target.value
+  h1.textContent = inputValue
+  console.log(event);
+}  
+// event listener
+
+inputChanger.addEventListener("keyup", handleInput);
