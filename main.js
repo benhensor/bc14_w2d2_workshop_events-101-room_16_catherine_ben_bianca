@@ -59,3 +59,27 @@ function handleInput(event) {
 // event listener
 
 inputChanger.addEventListener("keyup", handleInput);
+
+// Task 4
+
+// put img in a variable 
+//function 1
+  // change colour to hotpink
+
+  //function 2
+   // back to initial colour
+
+let imgVar = document.querySelector('img');
+
+function onMouseEnter(event) {
+  h1.style.color = "hotpink";
+  console.log(event);
+}
+
+function onMouseLeave(event) {
+  h1.style.color = 'initial';
+  console.log(event);
+}
+
+imgVar.addEventListener('mouseenter', onMouseEnter);
+imgVar.addEventListener('mouseleave', onMouseLeave);
