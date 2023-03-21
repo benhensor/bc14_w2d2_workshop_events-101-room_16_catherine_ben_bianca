@@ -20,3 +20,22 @@ button.addEventListener("click", handleClick);
 document.querySelector("#title-changer").addEventListener("keyup", (e) => {
   console.log(e.target.value);
 });
+
+// task 2
+
+// select button class and store in a variable
+
+let flowerButton = document.querySelector(".task-2");
+
+// create function called 'titleChange'
+// - change the page title in <head></head> to emojis
+
+function titleChange(event) {
+  document.title = `💐🌷🌼`;
+  console.log(event);
+}
+
+// add event listener to the flowerButton
+
+flowerButton.addEventListener("click", titleChange);
+
